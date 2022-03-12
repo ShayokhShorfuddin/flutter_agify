@@ -12,7 +12,7 @@ To use this package :
   dependencies:
     flutter:
       sdk: flutter
-    facts:
+    flutter_agify:
 ```
 
 
