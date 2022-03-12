@@ -11,7 +11,11 @@ https://agify.io/
 
 ## How To Use
 
-soon
+`flutter_agify` offers 4 functions to grab information from  Agify.io API response. They are -
+
+```dart
+getAge()
+```
 
 ## Usage
 
