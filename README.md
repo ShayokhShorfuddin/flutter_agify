@@ -22,6 +22,9 @@ getAges() // For grabbing age data of a list of names. "names" parameter is requ
 ```dart
 getAgeWithCountry() // For grabbing age data of 1 name but providing a country. "name" and "country" parameter is required and "apikey" parameter is optional.
 ```
+```dart
+getAgesWithCountry() // For grabbing age data of a list of names but providing a country. "names" and "country" parameter is required and "apikey" parameter is optional.
+```
 
 
 
