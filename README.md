@@ -2,6 +2,8 @@
 
 A Flutter package that grabs data from the Agify.io api that can predict your age using your name!
 
+**NOTE:** I would like to make it clear that **I don't own the Agify.io api and the only purpose of this package is to make using Agify.io api easy.**
+
 ## Usage
 
 To use this package :
