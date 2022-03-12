@@ -26,7 +26,8 @@ getAgeWithCountry() // For grabbing age data of 1 name but providing a country. 
 getAgesWithCountry() // For grabbing age data of a list of names but providing a country. "names" and "country" parameter is required and "apikey" parameter is optional.
 ```
 
-**NOTE:** If you are about to use ```getAgeWithCountry()``` or ```getAgesWithCountry()```, keep in mind that the Agify.io api follows `ISO 3166-1 alpha-2` for country codes. See https://agify.io/our-data for a list of all supported countries. :]
+
+* **NOTE:** If you are about to use ```getAgeWithCountry()``` or ```getAgesWithCountry()```, keep in mind that the Agify.io api follows `ISO 3166-1 alpha-2` for country codes. See https://agify.io/our-data for a list of all supported countries. :]
 
 
 ## Usage
