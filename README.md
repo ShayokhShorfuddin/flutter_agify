@@ -11,6 +11,7 @@ https://agify.io/
 
 ## How To Use
 
+<pre>
 `flutter_agify` offers 4 functions to grab information from  Agify.io API response. They are -
 
 ```dart
@@ -25,10 +26,11 @@ getAgeWithCountry() // For grabbing age data of 1 name but providing a country. 
 ```dart
 getAgesWithCountry() // For grabbing age data of a list of names but providing a country. "names" and "country" parameter is required and "apiKey" parameter is optional.
 ```
+
 * If you need to check more than 1000 names/day, you need to obtain an API key. For getting API key, visit https://store.agify.io/
 
 * **NOTE:** If you are about to use ```getAgeWithCountry()``` or ```getAgesWithCountry()```, keep in mind that the Agify.io api follows `ISO 3166-1 alpha-2` for country codes. See https://agify.io/our-data for a list of all supported countries. :]
-
+</pre>
 
 ## Code Example
 
