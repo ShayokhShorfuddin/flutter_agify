@@ -12,7 +12,7 @@ https://agify.io/
 ## How To Use
 
 `flutter_agify` offers 4 functions to grab information from  Agify.io API response. They are -
-
+ 
 
 ```dart
 getAge() // For grabbing age data of 1 name. "name" parameter is required and "apiKey" parameter is optional.
