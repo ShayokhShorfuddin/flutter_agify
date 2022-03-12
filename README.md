@@ -30,7 +30,7 @@ getAgesWithCountry() // For grabbing age data of a list of names but providing a
 * **NOTE:** If you are about to use ```getAgeWithCountry()``` or ```getAgesWithCountry()```, keep in mind that the Agify.io api follows `ISO 3166-1 alpha-2` for country codes. See https://agify.io/our-data for a list of all supported countries. :]
 
 
-# Code Example
+## Code Example
 
 Coming soon :]
 
