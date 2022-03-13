@@ -27,15 +27,74 @@ getAgeWithCountry() // For grabbing age data of 1 name but providing a country. 
 getAgesWithCountry() // For grabbing age data of a list of names but providing a country. "names" and "country" parameter is required and "apiKey" parameter is optional.
 ```
 
-
 * If you need to check more than 1000 names/day, you need to obtain an API key. For getting API key, visit https://store.agify.io/
 
 * **NOTE:** If you are about to use ```getAgeWithCountry()``` or ```getAgesWithCountry()```, keep in mind that the Agify.io api follows `ISO 3166-1 alpha-2` for country codes. See https://agify.io/our-data for a list of all supported countries. :]
 
 
+## Return Types
+
+soon
+
+
 ## Code Example
 
-Coming soon :]
+A piece of code that uses getAge() -
+
+```dart
+class homepage extends StatefulWidget {
+  const homepage({Key? key}) : super(key: key);
+
+  @override
+  State<homepage> createState() => _homepageState();
+}
+
+class _homepageState extends State<homepage> {
+  Future<dynamic>? target;
+
+  @override
+  void initState() {
+    target = getAge(name: "Peter");
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Center(
+      child: FutureBuilder<dynamic>(
+          future: target,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.done) {
+              if (snapshot.hasError) {
+                return Text(
+                  '${snapshot.error} occured',
+                  style: TextStyle(fontSize: 19, color: Colors.white),
+                );
+              } else if (snapshot.hasData) {
+                final data = snapshot.data;
+                return Container(
+                  alignment: Alignment.center,
+                  height: 400,
+                  width: 600,
+                  color: Color(0xFF12202F),
+                  child: Text(
+                    "Predicted age of ${data["Name"]} is ${data["Age"]}",
+                    style: TextStyle(fontSize: 19, color: Colors.white),
+                  ),
+                );
+              }
+            }
+            return SizedBox(
+              height: 50,
+              width: 50,
+              child: CircularProgressIndicator(),
+            );
+          }),
+    ));
+  }
+}
+```
 
 
 ## Usage
