@@ -37,6 +37,7 @@ getAgesWithCountry() // For grabbing age data of a list of names but providing a
 * ```getAge()``` returns a **Map** that looks like this - ```{"Name": _name, "Age": age, "Count": count}``` or it will throw an error if the API responded with an error.
 * ```getAges()``` returns ```jsonDecode(apiResponse.body)``` which is a **List** of **Maps** which contains the age data of every single person name you provided to the API as List. It can also throw an error if the API responded with an error.
 * ```getAgeWithCountry()``` returns a **Map** that looks like this - ```{"Name": _name, "Age": age, "Count": count, "Country": _country};``` or it will throw an error if the API responded with an error.
+* ```getAgesWithCountry()``` returns ```jsonDecode(apiResponse.body)``` which is a **List** of **Maps** which contains the age data of every single person name you provided to the API as List. It can also throw an error if the API responded with an error.
 
 
 ## Code Example
