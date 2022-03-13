@@ -101,7 +101,7 @@ class _homepageState extends State<homepage> {
 
 Here is the output of the code above -
 
-<img>scr="https://raw.githubusercontent.com/ShayokhShorfuddin/flutter_agify/master/output.png"</img>
+<img scr="https://raw.githubusercontent.com/ShayokhShorfuddin/flutter_agify/master/output.png"/>
 
 
 ## Usage
